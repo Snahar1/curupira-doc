@@ -1,4 +1,4 @@
-# 🌿 Guardião da Identidade Visual e Documentação Nativa do Ecossistema Scorpion.
+🌿 Guardião da Identidade Visual e Documentação Nativa do Ecossistema Scorpion.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PHP Version](https://img.shields.io/badge/php-%3E%3D%207.4-8892bf.svg)](https://www.php.net/)
