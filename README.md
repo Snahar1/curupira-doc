@@ -20,7 +20,9 @@ Adicione a dependência no seu arquivo `docas.json`:
     "snahar/curupira-doc": "1.0.0"
 }
 
-Execute o motor de instalação:
+---
+
+## Execute o motor de instalação:
 instalador_docas.bat
 
 📖 Como Utilizar:
