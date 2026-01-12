@@ -63,11 +63,9 @@ class Escritor
 
         return "<div style='border-left: 6px solid {$estilo['cor']};
             background: #1e1e1e; color: #ecf0f1; padding: 20px; margin: 15px 0; font-family: \"Segoe UI\", Tahoma, sans-serif; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.3);'>
-            <div style='color: {$estilo['cor']}; font-weight: bold; margin-bottom: 8px; font-size: 1.1em;'>
-            {$estilo['emoji']} {$estilo['titulo']}
-            </div>
-            <div stily='line-height: 1.5;'>
-            {$mensagem}
+            <div style='color: {$estilo['cor']}; font-weight: bold; margin-bottom: 8px; font-size: 1.1em;'>{$estilo['emoji']} {$estilo['titulo']}</div>
+            
+            <div style='line-height: 1.5;'>{$mensagem}</div>
             </div>";
     }
 
