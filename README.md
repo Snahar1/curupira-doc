@@ -1,55 +1,50 @@
-# 🌿 CurupiraDoc — O Guardião do Código
+# 🌿 CurupiraDoc — O Guardião da Floresta de Código
 
-O **CurupiraDoc** é o motor de identidade visual técnica e documentação nativa do Ecossistema Scorpion. Assim como o Curupira protege a floresta, esta biblioteca protege a integridade e a rastreabilidade do seu código, garantindo que cada função, classe e erro tenha uma identidade clara e padronizada no padrão **JAPURA**.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PHP Version](https://img.shields.io/badge/php-%3E%3D%207.4-8892bf.svg)](https://www.php.net/)
+
+O **CurupiraDoc** é a biblioteca oficial de identidade visual técnica e documentação do **Ecossistema Scorpion**. Inspirado na lenda do guardião das florestas, esta lib protege a integridade do projeto, garantindo que cada função, classe e erro tenha uma assinatura clara, rastreável e visualmente padronizada no padrão **JAPURA**.
 
 ---
 
-## 🚀 Funcionalidades Principal
+## ✨ Funcionalidades:
 
-- **FlashCards Visuais:** Alertas de sucesso, erro, info e advertência com interface moderna para sistemas administrativos.
-- **Auditoria de Acesso:** Rastreia quais partes do framework estão a ser utilizadas em tempo real.
-- **Integração Nativa:** Preparado para comunicar com a biblioteca `BanzeiroLogs` para persistência de dados.
-- **Padronização JAPURA:** Tags de comentários otimizadas para leitura técnica (⚓ ICOARACI, 🦂 SCORPION).
+- **FlashCards JAPURA:** Interface de alertas (Sucesso, Erro, Info, Alerta) com estilo dark mode nativo.
+- **Auditoria Nativa:** Método `registrarAcesso()` para telemetria de uso do framework.
+- **Rastreabilidade de Erros:** Formatação amigável para logs técnicos.
+- **Introspeção de Código:** Padronização visual para comentários e documentação de métodos.
 
-## 🛠️ Instalação via Docas
+## 🛠️ Instalação via Docas:
 
-Adicione a dependência no seu arquivo `docas.json`:
+Adicione a dependência ao seu arquivo `docas.json`:
 
-```json
+`json
 "require": {
     "snahar/curupira-doc": "1.0.0"
-}
+}`
 
----
+## 📖 Como Utilizar:
+1. Alertas Visuais (FlashCards):
+    Utilize para feedbacks imediatos na interface.
+    Nota: Certifique-se de chamar este método dentro do <body> da sua página para manter a fidelidade do layout.
 
-## Execute o motor de instalação:
-instalador_docas.bat
+`use CurupiraDoc\Escritor;`
 
-📖 Como Utilizar:
-1. Alertas Visuais (FlashCards)
-Ideal para retornos de formulários e avisos de sistema.
+`echo Escritor::flashCard('sucesso', 'Operação realizada com êxito!');`
 
-use CurupiraDoc\Escritor;
+2. Auditoria e Logs:
+    Registra o uso de um método específico para auditoria interna
+   
+`Escritor::registrarAcesso('IcoaraciDB::connect');`
 
-echo Escritor::flashCard('sucesso', 'Operação realizada com êxito!');
-echo Escritor::flashCard('erro', 'Falha crítica ao acessar o núcleo do sistema.');
+## 🤝 Ecossistema: 
+Esta biblioteca faz parte do universo Scorpion e integra-se com:
 
-2. Auditoria de Uso:
-Utilizado para criar rastros de segurança e telemetria de uso do código.
+    BanzeiroLogs: Para persistência física dos acessos.
 
-// Registra o uso de um método específico
-Escritor::registrarAcesso('IcoaraciDB::delete');
+    VeroEnv: Para alertas visuais de erro em variáveis de ambiente.
 
-🤝 Ecossistema e Integrações
+## ⚖️ Licença: 
+Este projeto está sob a licença MIT.
 
-O CurupiraDoc atua como a "voz" visual de outras bibliotecas:
-
-    BanzeiroLogs: Recebe os dados de registrarAcesso para persistência em disco.
-    VeroEnv: Utiliza os FlashCards para reportar falhas em chaves de ambiente (.env).
-    IcoaraciDB: Utiliza o padrão de documentação para exibir queries e erros de transação.
-
-⚖️ Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para detalhes.
-
-Desenvolvido com 🦂 por Sérgio Nahar — Transformando código em ecossistema.
+Desenvolvido com 🦂 por Sérgio Nahar
