@@ -31,9 +31,10 @@ Adicione a dependência ao seu arquivo `docas.json`:
     Utilize para feedbacks imediatos na interface.
     Nota: Certifique-se de chamar este método dentro do <body> da sua página para manter a fidelidade do layout.
 
-`use CurupiraDoc\Escritor;`
-
-`echo Escritor::flashCard('sucesso', 'Operação realizada com êxito!');`
+```
+use CurupiraDoc\Escritor;
+echo Escritor::flashCard('sucesso', 'Operação realizada com êxito!');
+```
 
 2. Auditoria e Logs:
     Registra o uso de um método específico para auditoria interna
@@ -42,12 +43,14 @@ Adicione a dependência ao seu arquivo `docas.json`:
 
 ## 🤝 Ecossistema: 
 Esta biblioteca faz parte do universo Scorpion e integra-se com:
-
+```
     BanzeiroLogs: Para persistência física dos acessos.
-
     VeroEnv: Para alertas visuais de erro em variáveis de ambiente.
+```
 
 ## ⚖️ Licença: 
 Este projeto está sob a licença MIT.
+
+---
 
 Desenvolvido com 🦂 por Sérgio Nahar
